@@ -30,6 +30,12 @@ const config = {
   plugins: ["@trivago/prettier-plugin-sort-imports"],
   experimentalTernaries: true,
   embeddedLanguageFormatting: "auto",
+  overrides: [{
+    files: ["*.json"],
+    options: {
+      printWidth: 50
+    }
+  }]
 };
 
 export default config;
